@@ -1,0 +1,549 @@
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-12T19:50:00,892][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [75.3gb], net total_space [79.1gb], types [xfs]
+[2020-04-12T19:50:00,942][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-12T19:50:02,075][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-12T19:50:02,080][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[12251], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-12T19:50:02,083][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-12T19:50:02,085][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-15398149777511421731, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2020-04-12T19:50:22,586][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [aggs-matrix-stats]
+[2020-04-12T19:50:22,587][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [analysis-common]
+[2020-04-12T19:50:22,598][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [flattened]
+[2020-04-12T19:50:22,606][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [frozen-indices]
+[2020-04-12T19:50:22,608][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-common]
+[2020-04-12T19:50:22,609][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-geoip]
+[2020-04-12T19:50:22,620][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-user-agent]
+[2020-04-12T19:50:22,621][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-expression]
+[2020-04-12T19:50:22,626][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-mustache]
+[2020-04-12T19:50:22,637][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-painless]
+[2020-04-12T19:50:22,639][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [mapper-extras]
+[2020-04-12T19:50:22,640][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [parent-join]
+[2020-04-12T19:50:22,642][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [percolator]
+[2020-04-12T19:50:22,649][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [rank-eval]
+[2020-04-12T19:50:22,657][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [reindex]
+[2020-04-12T19:50:22,660][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [repository-url]
+[2020-04-12T19:50:22,668][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [search-business-rules]
+[2020-04-12T19:50:22,669][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [spatial]
+[2020-04-12T19:50:22,680][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transform]
+[2020-04-12T19:50:22,685][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transport-netty4]
+[2020-04-12T19:50:22,692][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [vectors]
+[2020-04-12T19:50:22,697][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-analytics]
+[2020-04-12T19:50:22,699][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ccr]
+[2020-04-12T19:50:22,707][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-core]
+[2020-04-12T19:50:22,708][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-deprecation]
+[2020-04-12T19:50:22,716][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-enrich]
+[2020-04-12T19:50:22,725][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-graph]
+[2020-04-12T19:50:22,727][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ilm]
+[2020-04-12T19:50:22,736][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-logstash]
+[2020-04-12T19:50:22,738][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ml]
+[2020-04-12T19:50:22,739][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-monitoring]
+[2020-04-12T19:50:22,751][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-rollup]
+[2020-04-12T19:50:22,753][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-security]
+[2020-04-12T19:50:22,760][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-sql]
+[2020-04-12T19:50:22,766][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-voting-only-node]
+[2020-04-12T19:50:22,767][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-watcher]
+[2020-04-12T19:50:22,779][INFO ][o.e.p.PluginsService     ] [elk01] no plugins loaded
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[2020-04-12T19:52:06,457][INFO ][o.e.x.s.a.s.FileRolesStore] [elk01] parsed [0] roles from file [/app/elasticsearch-7.6.2/config/roles.yml]
+[2020-04-12T19:52:18,119][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [elk01] [controller/12336] [Main.cc@110] controller (64 bit): Version 7.6.2 (Build e06ef9d86d5332) Copyright (c) 2020 Elasticsearch BV
+[2020-04-12T19:52:32,288][DEBUG][o.e.a.ActionModule       ] [elk01] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2020-04-12T19:52:35,556][INFO ][o.e.d.DiscoveryModule    ] [elk01] using discovery type [zen] and seed hosts providers [settings]
+[2020-04-12T19:52:59,810][INFO ][o.e.n.Node               ] [elk01] initialized
+[2020-04-12T19:52:59,830][INFO ][o.e.n.Node               ] [elk01] starting ...
+[2020-04-12T19:53:03,113][INFO ][o.e.m.j.JvmGcMonitorService] [elk01] [gc][3] overhead, spent [308ms] collecting in the last [1s]
+[2020-04-12T19:53:03,667][INFO ][o.e.t.TransportService   ] [elk01] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-12T19:53:13,122][WARN ][o.e.b.BootstrapChecks    ] [elk01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2020-04-12T19:53:13,125][WARN ][o.e.b.BootstrapChecks    ] [elk01] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2020-04-12T19:53:13,158][INFO ][o.e.c.c.Coordinator      ] [elk01] cluster UUID [ftieUnzdSe-zkH1q-N4q6w]
+[2020-04-12T19:53:13,443][INFO ][o.e.c.c.ClusterBootstrapService] [elk01] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2020-04-12T19:53:15,143][INFO ][o.e.c.s.MasterService    ] [elk01] elected-as-master ([1] nodes joined)[{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{OslksH6rTlyIB-zFVF-Q6w}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=3131654144, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 16, version: 99, delta: master node changed {previous [], current [{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{OslksH6rTlyIB-zFVF-Q6w}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=3131654144, xpack.installed=true, ml.max_open_jobs=20}]}
+[2020-04-12T19:53:16,685][INFO ][o.e.c.s.ClusterApplierService] [elk01] master node changed {previous [], current [{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{OslksH6rTlyIB-zFVF-Q6w}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=3131654144, xpack.installed=true, ml.max_open_jobs=20}]}, term: 16, version: 99, reason: Publication{term=16, version=99}
+[2020-04-12T19:53:17,788][INFO ][o.e.h.AbstractHttpServerTransport] [elk01] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-12T19:53:17,818][INFO ][o.e.n.Node               ] [elk01] started
+[2020-04-12T19:53:19,364][INFO ][o.e.m.j.JvmGcMonitorService] [elk01] [gc][19] overhead, spent [355ms] collecting in the last [1s]
+[2020-04-12T19:53:23,299][INFO ][o.e.l.LicenseService     ] [elk01] license [9a1df962-f418-4e67-88b6-478a4493b400] mode [basic] - valid
+[2020-04-12T19:53:23,318][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [elk01] Active license is now [BASIC]; Security is disabled
+[2020-04-12T19:53:23,549][INFO ][o.e.g.GatewayService     ] [elk01] recovered [4] indices into cluster_state
+[2020-04-12T19:53:32,508][INFO ][o.e.m.j.JvmGcMonitorService] [elk01] [gc][32] overhead, spent [423ms] collecting in the last [1s]
+[2020-04-12T19:53:35,357][INFO ][o.e.c.r.a.AllocationService] [elk01] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.kibana_task_manager_1][0], [kibana_sample_data_logs][0], [.kibana_1][0]]]).
+[2020-04-12T19:57:19,290][INFO ][o.e.c.m.MetaDataIndexTemplateService] [elk01] adding template [.management-beats] for index patterns [.management-beats]
+[2020-04-12T19:59:26,951][INFO ][o.e.x.m.p.NativeController] [elk01] Native controller process has stopped - no new native processes can be started
+[2020-04-12T19:59:26,977][INFO ][o.e.n.Node               ] [elk01] stopping ...
+[2020-04-12T19:59:27,039][INFO ][o.e.x.w.WatcherService   ] [elk01] stopping watch service, reason [shutdown initiated]
+[2020-04-12T19:59:27,050][INFO ][o.e.x.w.WatcherLifeCycleService] [elk01] watcher has stopped and shutdown
+[2020-04-12T19:59:27,516][INFO ][o.e.n.Node               ] [elk01] stopped
+[2020-04-12T19:59:27,517][INFO ][o.e.n.Node               ] [elk01] closing ...
+[2020-04-12T19:59:27,650][INFO ][o.e.n.Node               ] [elk01] closed
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-12T20:09:47,428][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [75.2gb], net total_space [79.1gb], types [xfs]
+[2020-04-12T20:09:47,470][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-12T20:09:48,723][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-12T20:09:48,730][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[13571], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-12T20:09:48,732][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-12T20:09:48,739][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-5528741043867695450, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2020-04-12T20:10:04,569][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [aggs-matrix-stats]
+[2020-04-12T20:10:04,570][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [analysis-common]
+[2020-04-12T20:10:04,575][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [flattened]
+[2020-04-12T20:10:04,576][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [frozen-indices]
+[2020-04-12T20:10:04,583][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-common]
+[2020-04-12T20:10:04,584][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-geoip]
+[2020-04-12T20:10:04,587][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-user-agent]
+[2020-04-12T20:10:04,588][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-expression]
+[2020-04-12T20:10:04,590][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-mustache]
+[2020-04-12T20:10:04,593][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-painless]
+[2020-04-12T20:10:04,595][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [mapper-extras]
+[2020-04-12T20:10:04,598][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [parent-join]
+[2020-04-12T20:10:04,599][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [percolator]
+[2020-04-12T20:10:04,600][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [rank-eval]
+[2020-04-12T20:10:04,603][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [reindex]
+[2020-04-12T20:10:04,606][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [repository-url]
+[2020-04-12T20:10:04,608][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [search-business-rules]
+[2020-04-12T20:10:04,609][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [spatial]
+[2020-04-12T20:10:04,611][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transform]
+[2020-04-12T20:10:04,612][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transport-netty4]
+[2020-04-12T20:10:04,616][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [vectors]
+[2020-04-12T20:10:04,621][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-analytics]
+[2020-04-12T20:10:04,625][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ccr]
+[2020-04-12T20:10:04,628][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-core]
+[2020-04-12T20:10:04,630][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-deprecation]
+[2020-04-12T20:10:04,632][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-enrich]
+[2020-04-12T20:10:04,635][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-graph]
+[2020-04-12T20:10:04,636][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ilm]
+[2020-04-12T20:10:04,638][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-logstash]
+[2020-04-12T20:10:04,641][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ml]
+[2020-04-12T20:10:04,642][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-monitoring]
+[2020-04-12T20:10:04,647][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-rollup]
+[2020-04-12T20:10:04,650][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-security]
+[2020-04-12T20:10:04,653][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-sql]
+[2020-04-12T20:10:04,657][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-voting-only-node]
+[2020-04-12T20:10:04,659][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-watcher]
+[2020-04-12T20:10:04,661][INFO ][o.e.p.PluginsService     ] [elk01] no plugins loaded
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+Could not create APM Agent configuration: No Living connections
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Sending Logstash logs to /app/logstash-7.6.2/logs which is now configured via log4j2.properties
+[2020-04-12T20:19:30,880][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-04-12T20:19:31,830][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-04-12T20:19:36,516][INFO ][logstash.config.source.local.configpathloader] No config files found in path {:path=>"/app/logstash-7.6.2/config/logstash-simple.conf"}
+[2020-04-12T20:19:36,778][ERROR][logstash.config.sourceloader] No configuration found in the configured sources.
+[2020-04-12T20:19:39,107][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-04-12T20:19:42,900][INFO ][logstash.runner          ] Logstash shut down.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Sending Logstash logs to /app/logstash-7.6.2/logs which is now configured via log4j2.properties
+[2020-04-12T20:24:56,701][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-04-12T20:24:58,852][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-04-12T20:25:10,712][INFO ][logstash.config.source.local.configpathloader] No config files found in path {:path=>"/app/logstash-7.6.2/config/logstash-simple.conf"}
+[2020-04-12T20:25:11,269][ERROR][logstash.config.sourceloader] No configuration found in the configured sources.
+[2020-04-12T20:25:16,642][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-04-12T20:25:18,392][INFO ][logstash.runner          ] Logstash shut down.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Sending Logstash logs to /app/logstash-7.6.2/logs which is now configured via log4j2.properties
+[2020-04-12T21:05:05,912][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-04-12T21:05:06,891][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-04-12T21:05:11,785][INFO ][logstash.config.source.local.configpathloader] No config files found in path {:path=>"/app/logstash-7.6.2/config/logstash-simple.conf"}
+[2020-04-12T21:05:12,122][ERROR][logstash.config.sourceloader] No configuration found in the configured sources.
+[2020-04-12T21:05:14,968][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-04-12T21:05:18,019][INFO ][logstash.runner          ] Logstash shut down.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-13T20:09:58,898][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [74.6gb], net total_space [79.1gb], types [xfs]
+[2020-04-13T20:09:58,931][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-13T20:09:59,836][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-13T20:09:59,839][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[1449], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-13T20:09:59,841][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-13T20:09:59,844][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-1883093358604027913, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2020-04-13T20:10:14,843][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [aggs-matrix-stats]
+[2020-04-13T20:10:14,845][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [analysis-common]
+[2020-04-13T20:10:14,850][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [flattened]
+[2020-04-13T20:10:14,852][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [frozen-indices]
+[2020-04-13T20:10:14,853][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-common]
+[2020-04-13T20:10:14,861][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-geoip]
+[2020-04-13T20:10:14,865][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-user-agent]
+[2020-04-13T20:10:14,866][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-expression]
+[2020-04-13T20:10:14,867][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-mustache]
+[2020-04-13T20:10:14,872][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-painless]
+[2020-04-13T20:10:14,878][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [mapper-extras]
+[2020-04-13T20:10:14,879][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [parent-join]
+[2020-04-13T20:10:14,880][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [percolator]
+[2020-04-13T20:10:14,881][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [rank-eval]
+[2020-04-13T20:10:14,886][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [reindex]
+[2020-04-13T20:10:14,889][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [repository-url]
+[2020-04-13T20:10:14,891][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [search-business-rules]
+[2020-04-13T20:10:14,891][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [spatial]
+[2020-04-13T20:10:14,897][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transform]
+[2020-04-13T20:10:14,900][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transport-netty4]
+[2020-04-13T20:10:14,907][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [vectors]
+[2020-04-13T20:10:14,910][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-analytics]
+[2020-04-13T20:10:14,913][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ccr]
+[2020-04-13T20:10:14,914][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-core]
+[2020-04-13T20:10:14,921][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-deprecation]
+[2020-04-13T20:10:14,922][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-enrich]
+[2020-04-13T20:10:14,928][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-graph]
+[2020-04-13T20:10:14,929][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ilm]
+[2020-04-13T20:10:14,934][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-logstash]
+[2020-04-13T20:10:14,936][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ml]
+[2020-04-13T20:10:14,937][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-monitoring]
+[2020-04-13T20:10:14,945][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-rollup]
+[2020-04-13T20:10:14,946][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-security]
+[2020-04-13T20:10:14,947][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-sql]
+[2020-04-13T20:10:14,956][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-voting-only-node]
+[2020-04-13T20:10:14,957][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-watcher]
+[2020-04-13T20:10:14,964][INFO ][o.e.p.PluginsService     ] [elk01] no plugins loaded
+[2020-04-13T20:10:51,419][INFO ][o.e.x.s.a.s.FileRolesStore] [elk01] parsed [0] roles from file [/app/elasticsearch-7.6.2/config/roles.yml]
+[2020-04-13T20:10:55,184][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [elk01] [controller/1534] [Main.cc@110] controller (64 bit): Version 7.6.2 (Build e06ef9d86d5332) Copyright (c) 2020 Elasticsearch BV
+[2020-04-13T20:10:59,490][DEBUG][o.e.a.ActionModule       ] [elk01] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2020-04-13T20:11:00,691][INFO ][o.e.d.DiscoveryModule    ] [elk01] using discovery type [zen] and seed hosts providers [settings]
+[2020-04-13T20:11:08,523][INFO ][o.e.n.Node               ] [elk01] initialized
+[2020-04-13T20:11:08,529][INFO ][o.e.n.Node               ] [elk01] starting ...
+[2020-04-13T20:11:09,497][INFO ][o.e.t.TransportService   ] [elk01] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-13T20:11:12,604][WARN ][o.e.b.BootstrapChecks    ] [elk01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2020-04-13T20:11:12,609][WARN ][o.e.b.BootstrapChecks    ] [elk01] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2020-04-13T20:11:12,625][INFO ][o.e.c.c.Coordinator      ] [elk01] cluster UUID [ftieUnzdSe-zkH1q-N4q6w]
+[2020-04-13T20:11:12,721][INFO ][o.e.c.c.ClusterBootstrapService] [elk01] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2020-04-13T20:11:13,538][INFO ][o.e.c.s.MasterService    ] [elk01] elected-as-master ([1] nodes joined)[{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{roQVkLGSSI6fm-0Tl8t_zA}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=2077839360, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 21, version: 120, delta: master node changed {previous [], current [{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{roQVkLGSSI6fm-0Tl8t_zA}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=2077839360, xpack.installed=true, ml.max_open_jobs=20}]}
+[2020-04-13T20:11:14,316][INFO ][o.e.c.s.ClusterApplierService] [elk01] master node changed {previous [], current [{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{roQVkLGSSI6fm-0Tl8t_zA}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=2077839360, xpack.installed=true, ml.max_open_jobs=20}]}, term: 21, version: 120, reason: Publication{term=21, version=120}
+[2020-04-13T20:11:14,660][INFO ][o.e.h.AbstractHttpServerTransport] [elk01] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-13T20:11:14,677][INFO ][o.e.n.Node               ] [elk01] started
+[2020-04-13T20:11:17,208][INFO ][o.e.l.LicenseService     ] [elk01] license [9a1df962-f418-4e67-88b6-478a4493b400] mode [basic] - valid
+[2020-04-13T20:11:17,217][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [elk01] Active license is now [BASIC]; Security is disabled
+[2020-04-13T20:11:17,330][INFO ][o.e.g.GatewayService     ] [elk01] recovered [4] indices into cluster_state
+[2020-04-13T20:11:23,748][INFO ][o.e.c.r.a.AllocationService] [elk01] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.kibana_task_manager_1][0], [kibana_sample_data_logs][0], [.kibana_1][0]]]).
+[2020-04-13T20:13:46,753][INFO ][o.e.x.m.p.NativeController] [elk01] Native controller process has stopped - no new native processes can be started
+[2020-04-13T20:13:46,773][INFO ][o.e.n.Node               ] [elk01] stopping ...
+[2020-04-13T20:13:46,806][INFO ][o.e.x.w.WatcherService   ] [elk01] stopping watch service, reason [shutdown initiated]
+[2020-04-13T20:13:46,810][INFO ][o.e.x.w.WatcherLifeCycleService] [elk01] watcher has stopped and shutdown
+[2020-04-13T20:13:47,354][INFO ][o.e.n.Node               ] [elk01] stopped
+[2020-04-13T20:13:47,356][INFO ][o.e.n.Node               ] [elk01] closing ...
+[2020-04-13T20:13:47,451][INFO ][o.e.n.Node               ] [elk01] closed
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-13T20:23:04,239][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [74.6gb], net total_space [79.1gb], types [xfs]
+[2020-04-13T20:23:04,279][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-13T20:23:05,408][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-13T20:23:05,414][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[2904], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-13T20:23:05,416][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-13T20:23:05,420][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-852641636298865769, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-13T20:23:39,492][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [74.6gb], net total_space [79.1gb], types [xfs]
+[2020-04-13T20:23:39,533][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-13T20:23:40,404][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-13T20:23:40,407][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[3248], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-13T20:23:40,412][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-13T20:23:40,415][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-2581402704071629396, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-13T20:35:05,108][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [74.6gb], net total_space [79.1gb], types [xfs]
+[2020-04-13T20:35:05,146][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-13T20:35:06,119][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-13T20:35:06,123][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[3803], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-13T20:35:06,125][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-13T20:35:06,132][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-9149900940036393898, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2020-04-13T20:35:28,137][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [aggs-matrix-stats]
+[2020-04-13T20:35:28,155][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [analysis-common]
+[2020-04-13T20:35:28,157][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [flattened]
+[2020-04-13T20:35:28,158][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [frozen-indices]
+[2020-04-13T20:35:28,165][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-common]
+[2020-04-13T20:35:28,173][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-geoip]
+[2020-04-13T20:35:28,176][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-user-agent]
+[2020-04-13T20:35:28,177][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-expression]
+[2020-04-13T20:35:28,185][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-mustache]
+[2020-04-13T20:35:28,194][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-painless]
+[2020-04-13T20:35:28,196][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [mapper-extras]
+[2020-04-13T20:35:28,203][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [parent-join]
+[2020-04-13T20:35:28,204][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [percolator]
+[2020-04-13T20:35:28,208][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [rank-eval]
+[2020-04-13T20:35:28,209][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [reindex]
+[2020-04-13T20:35:28,217][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [repository-url]
+[2020-04-13T20:35:28,221][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [search-business-rules]
+[2020-04-13T20:35:28,222][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [spatial]
+[2020-04-13T20:35:28,231][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transform]
+[2020-04-13T20:35:28,232][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transport-netty4]
+[2020-04-13T20:35:28,244][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [vectors]
+[2020-04-13T20:35:28,245][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-analytics]
+[2020-04-13T20:35:28,253][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ccr]
+[2020-04-13T20:35:28,257][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-core]
+[2020-04-13T20:35:28,264][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-deprecation]
+[2020-04-13T20:35:28,265][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-enrich]
+[2020-04-13T20:35:28,272][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-graph]
+[2020-04-13T20:35:28,273][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ilm]
+[2020-04-13T20:35:28,279][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-logstash]
+[2020-04-13T20:35:28,286][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ml]
+[2020-04-13T20:35:28,287][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-monitoring]
+[2020-04-13T20:35:28,301][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-rollup]
+[2020-04-13T20:35:28,302][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-security]
+[2020-04-13T20:35:28,311][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-sql]
+[2020-04-13T20:35:28,317][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-voting-only-node]
+[2020-04-13T20:35:28,319][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-watcher]
+[2020-04-13T20:35:28,330][INFO ][o.e.p.PluginsService     ] [elk01] no plugins loaded
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[2020-04-13T20:37:54,649][INFO ][o.e.x.s.a.s.FileRolesStore] [elk01] parsed [0] roles from file [/app/elasticsearch-7.6.2/config/roles.yml]
+Could not create APM Agent configuration: No Living connections
+Sending Logstash logs to /app/logstash-7.6.2/logs which is now configured via log4j2.properties
+[2020-04-13T20:41:34,554][WARN ][logstash.config.source.multilocal] Ignoring the 'pipelines.yml' file because modules or command line options are specified
+[2020-04-13T20:41:35,440][INFO ][logstash.runner          ] Starting Logstash {"logstash.version"=>"7.6.2"}
+[2020-04-13T20:41:40,155][INFO ][logstash.config.source.local.configpathloader] No config files found in path {:path=>"/app/logstash-7.6.2/config/logstash-simple.conf"}
+[2020-04-13T20:41:40,558][ERROR][logstash.config.sourceloader] No configuration found in the configured sources.
+[2020-04-13T20:41:43,248][INFO ][logstash.agent           ] Successfully started Logstash API endpoint {:port=>9600}
+[2020-04-13T20:41:46,764][INFO ][logstash.runner          ] Logstash shut down.
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+[2020-04-13T20:49:12,108][INFO ][o.e.e.NodeEnvironment    ] [elk01] using [1] data paths, mounts [[/app (/dev/vda2)]], net usable_space [73.6gb], net total_space [79.1gb], types [xfs]
+[2020-04-13T20:49:12,150][INFO ][o.e.e.NodeEnvironment    ] [elk01] heap size [503.6mb], compressed ordinary object pointers [true]
+[2020-04-13T20:49:13,527][INFO ][o.e.n.Node               ] [elk01] node name [elk01], node ID [WGwDqNhVTMCSA6PqdPCR2g], cluster name [elasticsearch]
+[2020-04-13T20:49:13,530][INFO ][o.e.n.Node               ] [elk01] version[7.6.2], pid[6148], build[default/tar/ef48eb35cf30adf4db14086e8aabd07ef6fb113f/2020-03-26T06:34:37.794943Z], OS[Linux/5.5.15-200.fc31.x86_64/amd64], JVM[Oracle Corporation/OpenJDK 64-Bit Server VM/13.0.2/13.0.2+8]
+[2020-04-13T20:49:13,532][INFO ][o.e.n.Node               ] [elk01] JVM home [/app/jdk-13.0.2]
+[2020-04-13T20:49:13,535][INFO ][o.e.n.Node               ] [elk01] JVM arguments [-Des.networkaddress.cache.ttl=60, -Des.networkaddress.cache.negative.ttl=10, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -XX:-OmitStackTraceInFastThrow, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dio.netty.allocator.numDirectArenas=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Djava.locale.providers=COMPAT, -Xms512m, -Xmx512m, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -Djava.io.tmpdir=/tmp/elasticsearch-1306644793073566241, -XX:+HeapDumpOnOutOfMemoryError, -XX:HeapDumpPath=data, -XX:ErrorFile=logs/hs_err_pid%p.log, -Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m, -XX:MaxDirectMemorySize=268435456, -Des.path.home=/app/elasticsearch-7.6.2, -Des.path.conf=/app/elasticsearch-7.6.2/config, -Des.distribution.flavor=default, -Des.distribution.type=tar, -Des.bundled_jdk=true]
+[2020-04-13T20:49:32,645][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [aggs-matrix-stats]
+[2020-04-13T20:49:32,647][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [analysis-common]
+[2020-04-13T20:49:32,653][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [flattened]
+[2020-04-13T20:49:32,655][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [frozen-indices]
+[2020-04-13T20:49:32,657][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-common]
+[2020-04-13T20:49:32,662][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-geoip]
+[2020-04-13T20:49:32,668][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [ingest-user-agent]
+[2020-04-13T20:49:32,670][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-expression]
+[2020-04-13T20:49:32,671][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-mustache]
+[2020-04-13T20:49:32,678][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [lang-painless]
+[2020-04-13T20:49:32,680][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [mapper-extras]
+[2020-04-13T20:49:32,681][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [parent-join]
+[2020-04-13T20:49:32,682][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [percolator]
+[2020-04-13T20:49:32,689][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [rank-eval]
+[2020-04-13T20:49:32,690][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [reindex]
+[2020-04-13T20:49:32,697][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [repository-url]
+[2020-04-13T20:49:32,699][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [search-business-rules]
+[2020-04-13T20:49:32,700][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [spatial]
+[2020-04-13T20:49:32,705][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transform]
+[2020-04-13T20:49:32,709][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [transport-netty4]
+[2020-04-13T20:49:32,716][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [vectors]
+[2020-04-13T20:49:32,722][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-analytics]
+[2020-04-13T20:49:32,724][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ccr]
+[2020-04-13T20:49:32,729][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-core]
+[2020-04-13T20:49:32,735][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-deprecation]
+[2020-04-13T20:49:32,736][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-enrich]
+[2020-04-13T20:49:32,742][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-graph]
+[2020-04-13T20:49:32,743][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ilm]
+[2020-04-13T20:49:32,745][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-logstash]
+[2020-04-13T20:49:32,751][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-ml]
+[2020-04-13T20:49:32,752][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-monitoring]
+[2020-04-13T20:49:32,758][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-rollup]
+[2020-04-13T20:49:32,759][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-security]
+[2020-04-13T20:49:32,760][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-sql]
+[2020-04-13T20:49:32,769][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-voting-only-node]
+[2020-04-13T20:49:32,770][INFO ][o.e.p.PluginsService     ] [elk01] loaded module [x-pack-watcher]
+[2020-04-13T20:49:32,777][INFO ][o.e.p.PluginsService     ] [elk01] no plugins loaded
+[2020-04-13T20:50:12,273][INFO ][o.e.x.s.a.s.FileRolesStore] [elk01] parsed [0] roles from file [/app/elasticsearch-7.6.2/config/roles.yml]
+[2020-04-13T20:50:16,797][INFO ][o.e.x.m.p.l.CppLogMessageHandler] [elk01] [controller/6231] [Main.cc@110] controller (64 bit): Version 7.6.2 (Build e06ef9d86d5332) Copyright (c) 2020 Elasticsearch BV
+[2020-04-13T20:50:21,791][DEBUG][o.e.a.ActionModule       ] [elk01] Using REST wrapper from plugin org.elasticsearch.xpack.security.Security
+[2020-04-13T20:50:23,192][INFO ][o.e.d.DiscoveryModule    ] [elk01] using discovery type [zen] and seed hosts providers [settings]
+[2020-04-13T20:50:31,546][INFO ][o.e.n.Node               ] [elk01] initialized
+[2020-04-13T20:50:31,554][INFO ][o.e.n.Node               ] [elk01] starting ...
+[2020-04-13T20:50:32,750][INFO ][o.e.t.TransportService   ] [elk01] publish_address {127.0.0.1:9300}, bound_addresses {[::1]:9300}, {127.0.0.1:9300}
+[2020-04-13T20:50:36,046][WARN ][o.e.b.BootstrapChecks    ] [elk01] max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]
+[2020-04-13T20:50:36,051][WARN ][o.e.b.BootstrapChecks    ] [elk01] the default discovery settings are unsuitable for production use; at least one of [discovery.seed_hosts, discovery.seed_providers, cluster.initial_master_nodes] must be configured
+[2020-04-13T20:50:36,065][INFO ][o.e.c.c.Coordinator      ] [elk01] cluster UUID [ftieUnzdSe-zkH1q-N4q6w]
+[2020-04-13T20:50:36,168][INFO ][o.e.c.c.ClusterBootstrapService] [elk01] no discovery configuration found, will perform best-effort cluster bootstrapping after [3s] unless existing master is discovered
+[2020-04-13T20:50:36,965][INFO ][o.e.c.s.MasterService    ] [elk01] elected-as-master ([1] nodes joined)[{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{AMsw13MPSlSWbg9ArKkFzw}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=2077839360, xpack.installed=true, ml.max_open_jobs=20} elect leader, _BECOME_MASTER_TASK_, _FINISH_ELECTION_], term: 22, version: 126, delta: master node changed {previous [], current [{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{AMsw13MPSlSWbg9ArKkFzw}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=2077839360, xpack.installed=true, ml.max_open_jobs=20}]}
+[2020-04-13T20:50:37,622][INFO ][o.e.c.s.ClusterApplierService] [elk01] master node changed {previous [], current [{elk01}{WGwDqNhVTMCSA6PqdPCR2g}{AMsw13MPSlSWbg9ArKkFzw}{127.0.0.1}{127.0.0.1:9300}{dilm}{ml.machine_memory=2077839360, xpack.installed=true, ml.max_open_jobs=20}]}, term: 22, version: 126, reason: Publication{term=22, version=126}
+[2020-04-13T20:50:38,041][INFO ][o.e.h.AbstractHttpServerTransport] [elk01] publish_address {127.0.0.1:9200}, bound_addresses {[::1]:9200}, {127.0.0.1:9200}
+[2020-04-13T20:50:38,058][INFO ][o.e.n.Node               ] [elk01] started
+[2020-04-13T20:50:41,667][INFO ][o.e.l.LicenseService     ] [elk01] license [9a1df962-f418-4e67-88b6-478a4493b400] mode [basic] - valid
+[2020-04-13T20:50:41,675][INFO ][o.e.x.s.s.SecurityStatusChangeListener] [elk01] Active license is now [BASIC]; Security is disabled
+[2020-04-13T20:50:41,804][INFO ][o.e.g.GatewayService     ] [elk01] recovered [4] indices into cluster_state
+[2020-04-13T20:50:42,620][DEBUG][o.e.a.s.TransportSearchAction] [elk01] All shards failed for phase: [query]
+[2020-04-13T20:50:42,619][DEBUG][o.e.a.s.TransportSearchAction] [elk01] All shards failed for phase: [query]
+[2020-04-13T20:50:42,640][WARN ][r.suppressed             ] [elk01] path: /.kibana_task_manager/_count, params: {index=.kibana_task_manager}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:545) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:306) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:574) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:386) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:220) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:285) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:44) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:692) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+[2020-04-13T20:50:42,637][WARN ][r.suppressed             ] [elk01] path: /.kibana/_count, params: {index=.kibana}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:545) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:306) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:574) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:386) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:220) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:285) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:44) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:692) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+[2020-04-13T20:50:45,270][DEBUG][o.e.a.s.TransportSearchAction] [elk01] All shards failed for phase: [query]
+[2020-04-13T20:50:45,271][WARN ][r.suppressed             ] [elk01] path: /.kibana_task_manager/_count, params: {index=.kibana_task_manager}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:545) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:306) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:574) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:386) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:220) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:285) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:44) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:692) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+[2020-04-13T20:50:45,326][DEBUG][o.e.a.s.TransportSearchAction] [elk01] All shards failed for phase: [query]
+[2020-04-13T20:50:45,327][WARN ][r.suppressed             ] [elk01] path: /.kibana/_count, params: {index=.kibana}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:545) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:306) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:574) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:386) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.lambda$performPhaseOnShard$0(AbstractSearchAsyncAction.java:220) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$2.doRun(AbstractSearchAsyncAction.java:285) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:44) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:692) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+[2020-04-13T20:50:48,007][DEBUG][o.e.a.s.TransportSearchAction] [elk01] All shards failed for phase: [query]
+[2020-04-13T20:50:48,009][WARN ][r.suppressed             ] [elk01] path: /.kibana_task_manager/_count, params: {index=.kibana_task_manager}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:545) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:306) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:574) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:386) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.access$200(AbstractSearchAsyncAction.java:66) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$1.onFailure(AbstractSearchAsyncAction.java:242) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.SearchExecutionStatsCollector.onFailure(SearchExecutionStatsCollector.java:73) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:59) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.SearchTransportService$ConnectionCountingHandler.handleException(SearchTransportService.java:423) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1130) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1239) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1213) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TaskTransportChannel.sendResponse(TaskTransportChannel.java:60) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.support.ChannelActionListener.onFailure(ChannelActionListener.java:56) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionListener$1.onFailure(ActionListener.java:71) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:65) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionRunnable.lambda$supply$0(ActionRunnable.java:58) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionRunnable$2.doRun(ActionRunnable.java:73) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:44) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:692) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+[2020-04-13T20:50:48,082][DEBUG][o.e.a.s.TransportSearchAction] [elk01] All shards failed for phase: [query]
+[2020-04-13T20:50:48,084][WARN ][r.suppressed             ] [elk01] path: /.kibana/_count, params: {index=.kibana}
+org.elasticsearch.action.search.SearchPhaseExecutionException: all shards failed
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseFailure(AbstractSearchAsyncAction.java:545) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:306) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:574) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onShardFailure(AbstractSearchAsyncAction.java:386) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.access$200(AbstractSearchAsyncAction.java:66) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction$1.onFailure(AbstractSearchAsyncAction.java:242) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.SearchExecutionStatsCollector.onFailure(SearchExecutionStatsCollector.java:73) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:59) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.search.SearchTransportService$ConnectionCountingHandler.handleException(SearchTransportService.java:423) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1130) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1239) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1213) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.transport.TaskTransportChannel.sendResponse(TaskTransportChannel.java:60) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.support.ChannelActionListener.onFailure(ChannelActionListener.java:56) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionListener$1.onFailure(ActionListener.java:71) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionListener$1.onResponse(ActionListener.java:65) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionRunnable.lambda$supply$0(ActionRunnable.java:58) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.action.ActionRunnable$2.doRun(ActionRunnable.java:73) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.TimedRunnable.doRun(TimedRunnable.java:44) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:692) [elasticsearch-7.6.2.jar:7.6.2]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-7.6.2.jar:7.6.2]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:830) [?:?]
+[2020-04-13T20:50:48,897][INFO ][o.e.c.r.a.AllocationService] [elk01] Cluster health status changed from [RED] to [GREEN] (reason: [shards started [[.kibana_task_manager_1][0], [kibana_sample_data_logs][0], [.kibana_1][0]]]).
+[2020-04-13T20:51:17,523][INFO ][o.e.c.m.MetaDataIndexTemplateService] [elk01] adding template [.management-beats] for index patterns [.management-beats]
+[2020-04-13T20:52:30,850][INFO ][o.e.x.m.p.NativeController] [elk01] Native controller process has stopped - no new native processes can be started
+[2020-04-13T20:52:30,860][INFO ][o.e.n.Node               ] [elk01] stopping ...
+[2020-04-13T20:52:30,929][INFO ][o.e.x.w.WatcherService   ] [elk01] stopping watch service, reason [shutdown initiated]
+[2020-04-13T20:52:30,947][INFO ][o.e.x.w.WatcherLifeCycleService] [elk01] watcher has stopped and shutdown
+[2020-04-13T20:52:33,730][INFO ][o.e.n.Node               ] [elk01] stopped
+[2020-04-13T20:52:33,734][INFO ][o.e.n.Node               ] [elk01] closing ...
+[2020-04-13T20:52:33,866][INFO ][o.e.n.Node               ] [elk01] closed
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by com.headius.backport9.modules.Modules (file:/app/logstash-7.6.2/logstash-core/lib/jars/jruby-complete-9.2.9.0.jar) to method sun.nio.ch.NativeThread.signal(long)
+WARNING: Please consider reporting this to the maintainers of com.headius.backport9.modules.Modules
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release

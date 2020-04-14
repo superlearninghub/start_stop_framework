@@ -1,0 +1,4 @@
+#APP_NAME  APP_NAME  ${GROUP_APPNAME}        #GLOBAL_VAR
+elastic	  elastic   elastic
+kibana	  kibana    kibana
+logstash  logstash  logstash
